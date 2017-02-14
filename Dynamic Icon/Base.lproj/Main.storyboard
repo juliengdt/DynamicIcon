@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16A322" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dynamic_Icon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dynamic Icon - Sample App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-do-ESR">
+                                <rect key="frame" x="16" y="28" width="343" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADN style" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvv-8s-T0H">
+                                <rect key="frame" x="151" y="174" width="72" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home style (Pre-rendered)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRD-Kg-5js">
+                                <rect key="frame" x="90" y="324" width="194" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soccer style" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-7A-JqU">
+                                <rect key="frame" x="142" y="474" width="90" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t08-54-Nsq">
+                                <rect key="frame" x="153" y="202" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="T00-yJ-dHG"/>
+                                    <constraint firstAttribute="width" constant="70" id="prB-oU-y1S"/>
+                                </constraints>
+                                <state key="normal" image="adn.png"/>
+                                <connections>
+                                    <action selector="changeStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2q-eq-iqT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzc-PH-Gjy">
+                                <rect key="frame" x="153" y="352" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Pi2-x1-3t4"/>
+                                    <constraint firstAttribute="width" constant="70" id="shz-VM-0dS"/>
+                                </constraints>
+                                <state key="normal" image="home.png"/>
+                                <connections>
+                                    <action selector="changeStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTk-w5-G3X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtI-c8-JlS">
+                                <rect key="frame" x="153" y="502" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="5c4-ht-4El"/>
+                                    <constraint firstAttribute="height" constant="70" id="s6F-7S-GkN"/>
+                                </constraints>
+                                <state key="normal" image="soccer.png"/>
+                                <connections>
+                                    <action selector="changeStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6E-o0-8jb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the wanted icon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOC-0E-I4V">
+                                <rect key="frame" x="16" y="82" width="343" height="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfT-WE-bBy">
+                                <rect key="frame" x="94" y="604" width="188" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="x28-c9-dpy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <state key="normal" title="I want to reset the app icon">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetAppIcon" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXz-i2-4eU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t08-54-Nsq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1iq-pp-Lux"/>
+                            <constraint firstItem="Fur-do-ESR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AHC-iB-gvm"/>
+                            <constraint firstItem="bvv-8s-T0H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BvC-eP-gTk"/>
+                            <constraint firstItem="DtI-c8-JlS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKa-xs-Xwk"/>
+                            <constraint firstItem="pzc-PH-Gjy" firstAttribute="top" secondItem="tRD-Kg-5js" secondAttribute="bottom" constant="8" id="Fwn-q0-v3D"/>
+                            <constraint firstItem="t08-54-Nsq" firstAttribute="top" secondItem="bvv-8s-T0H" secondAttribute="bottom" constant="8" id="MfX-uF-4zf"/>
+                            <constraint firstItem="XfT-WE-bBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NdZ-sP-bCI"/>
+                            <constraint firstItem="tRD-Kg-5js" firstAttribute="top" secondItem="bvv-8s-T0H" secondAttribute="bottom" constant="130" id="Odb-eI-o3D"/>
+                            <constraint firstItem="DtI-c8-JlS" firstAttribute="top" secondItem="vZV-7A-JqU" secondAttribute="bottom" constant="8" id="RTs-4H-nTt"/>
+                            <constraint firstItem="vZV-7A-JqU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rtj-0d-4PA"/>
+                            <constraint firstItem="tRD-Kg-5js" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YJE-mx-4fq"/>
+                            <constraint firstItem="pzc-PH-Gjy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZEQ-o8-EdF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XfT-WE-bBy" secondAttribute="bottom" constant="32" id="ZbC-Lg-cVx"/>
+                            <constraint firstItem="Fur-do-ESR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bwl-PA-Glq"/>
+                            <constraint firstItem="OOC-0E-I4V" firstAttribute="top" secondItem="Fur-do-ESR" secondAttribute="bottom" constant="20" id="cVP-0S-L9o"/>
+                            <constraint firstItem="XfT-WE-bBy" firstAttribute="top" secondItem="DtI-c8-JlS" secondAttribute="bottom" constant="32" id="dPC-a6-Ica"/>
+                            <constraint firstItem="vZV-7A-JqU" firstAttribute="top" secondItem="tRD-Kg-5js" secondAttribute="bottom" constant="130" id="lp3-FZ-n36"/>
+                            <constraint firstItem="OOC-0E-I4V" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nss-Lu-mu6"/>
+                            <constraint firstItem="OOC-0E-I4V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="u9M-mx-lr3"/>
+                            <constraint firstItem="tRD-Kg-5js" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wM8-7h-Cf1"/>
+                            <constraint firstItem="Fur-do-ESR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xWd-Kq-aMV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="adn.png" width="60" height="60"/>
+        <image name="home.png" width="60" height="60"/>
+        <image name="soccer.png" width="60" height="60"/>
+    </resources>
+</document>
