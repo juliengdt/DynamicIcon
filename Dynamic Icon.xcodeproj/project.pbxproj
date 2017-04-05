@@ -131,8 +131,8 @@
 				TargetAttributes = {
 					07AE63C21E5349140088C1EA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = LGAQA3S7WF;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 4N9UQG5FZJ;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -303,12 +303,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = LGAQA3S7WF;
+				DEVELOPMENT_TEAM = 4N9UQG5FZJ;
 				INFOPLIST_FILE = "Dynamic Icon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jlngdt.Dynamic-Icon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlngdt.dynicon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2ee4ad4f-ea6d-4520-b960-a0d8dc41b895";
+				PROVISIONING_PROFILE_SPECIFIER = "Dynamic Icon - Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -317,12 +319,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = LGAQA3S7WF;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 4N9UQG5FZJ;
 				INFOPLIST_FILE = "Dynamic Icon/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jlngdt.Dynamic-Icon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlngdt.dynicon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d7265f0b-95d7-43ec-8ead-a3c4972152fd";
+				PROVISIONING_PROFILE_SPECIFIER = "Dynamic Icon - AdHoc";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
